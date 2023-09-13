@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celda" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="ejTienda" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="❮" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynS-32-tTY">
+                        <rect key="frame" x="10" y="7" width="9" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="tPO-Cc-OoS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="❯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rY4-jD-ufs">
+                        <rect key="frame" x="301" y="11.666666666666664" width="9" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Producto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hME-jo-jcB">
+                        <rect key="frame" x="29" y="9.3333333333333339" width="179.66666666666666" height="25.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="precio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUv-pC-SB5">
+                        <rect key="frame" x="228.66666666666666" y="7" width="47.333333333333343" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Td6-lP-164"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSQ-gC-Swx">
+                        <rect key="frame" x="280" y="11.666666666666664" width="11" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="rY4-jD-ufs" firstAttribute="leading" secondItem="vSQ-gC-Swx" secondAttribute="trailing" constant="10" id="0r5-Jj-ZcD"/>
+                    <constraint firstAttribute="trailing" secondItem="rY4-jD-ufs" secondAttribute="trailing" constant="10" id="At0-G2-Jl7"/>
+                    <constraint firstItem="ynS-32-tTY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="B1x-Vk-Ihs"/>
+                    <constraint firstItem="vSQ-gC-Swx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="LAR-53-xc4"/>
+                    <constraint firstItem="rY4-jD-ufs" firstAttribute="leading" secondItem="GUv-pC-SB5" secondAttribute="trailing" constant="25" id="QtG-Oz-3O5"/>
+                    <constraint firstItem="GUv-pC-SB5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bhr-Fz-1ze"/>
+                    <constraint firstItem="hME-jo-jcB" firstAttribute="leading" secondItem="ynS-32-tTY" secondAttribute="trailing" constant="10" id="dbO-fe-pts"/>
+                    <constraint firstItem="ynS-32-tTY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="i0x-3a-N9y"/>
+                    <constraint firstItem="rY4-jD-ufs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="q7D-Gd-jKi"/>
+                    <constraint firstItem="GUv-pC-SB5" firstAttribute="leading" secondItem="hME-jo-jcB" secondAttribute="trailing" constant="20" id="tEF-3o-J09"/>
+                    <constraint firstItem="hME-jo-jcB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tmW-br-FB1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="precio" destination="GUv-pC-SB5" id="I6l-Oc-ZiH"/>
+                <outlet property="producto" destination="hME-jo-jcB" id="Ccu-66-vUu"/>
+            </connections>
+            <point key="canvasLocation" x="142" y="133"/>
+        </tableViewCell>
+    </objects>
+</document>
